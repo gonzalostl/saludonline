@@ -1,0 +1,229 @@
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: white;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 240px;
+
+  box-shadow: 3px 15px 18px -10px rgba(0, 0, 0, 0.75);
+
+  background-color: rgb(111, 210, 238);
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 140px;
+
+  box-shadow: 3px -15px 18px -10px rgba(0, 0, 0, 0.75);
+
+  background-color: rgb(111, 210, 238);
+}
+
+/*-------------------CABECERA--------------------*/
+
+/*categorias*/
+.categorias {
+  padding-top: 30px;
+  padding-bottom: 28px;
+  padding-left: 36px;
+  padding-right: 52px;
+  left: 300px;
+  top: 62px;
+  position: absolute;
+  justify-content: flex-start;
+  align-items: center;
+  display: inline-flex;
+  text-align: center;
+  color: black;
+  font-size: 32px;
+  font-family: IM FELL Great Primer SC;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+/*consultas*/
+.consultas {
+  padding-top: 30px;
+  padding-bottom: 28px;
+  padding-left: 36px;
+  padding-right: 52px;
+  left: 615px;
+  top: 62px;
+  position: absolute;
+  justify-content: flex-start;
+  align-items: center;
+  display: inline-flex;
+  text-align: center;
+  color: black;
+  font-size: 32px;
+  font-family: IM FELL Great Primer SC;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 80%;
+  left: 10%;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  min-width: 160px;
+  z-index: 1;
+}
+
+.consultas:hover .submenu {
+  display: block;
+}
+
+.submenu-item {
+  padding: 12px;
+  text-decoration: none;
+  display: block;
+  color: #333;
+}
+
+.submenu-item:hover {
+  background-color: #ddd;
+}
+/*misreservas*/
+.misreservas {
+  padding-top: 30px;
+  padding-bottom: 28px;
+  padding-left: 6px;
+  padding-right: 30px;
+  left: 1082px;
+  top: 62px;
+  position: absolute;
+  justify-content: flex-start;
+  align-items: center;
+  display: inline-flex;
+  text-align: center;
+  color: black;
+  font-size: 32px;
+  font-family: IM FELL Great Primer SC;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+/*iniciar/registrarse*/
+.ir {
+  width: 252px;
+  left: 1607px;
+  top: 19px;
+  position: absolute;
+  color: black;
+  font-size: 28px;
+  font-family: Inknut Antiqua;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+/* barra de busqueda*/
+.buscar {
+  left: 1685px;
+  top: 155px;
+  position: absolute;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+}
+
+input {
+  outline: none;
+  box-sizing: border-box;
+  height: 60px;
+  width: 0px;
+  padding: 0 20px;
+  color: #000;
+  border-radius: 50px;
+  font-size: 20px;
+  border: 1px solid #000000;
+  transition: all 0.7s ease;
+}
+
+::placeholder {
+  color: grey;
+}
+
+.btn {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 80px;
+  height: 80px;
+  background: #000000;
+  line-height: 80px;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.btn i {
+  font-size: 25px;
+  color: white;
+  line-height: 80px;
+  transition: all 0.7s ease;
+}
+
+.buscar:hover input {
+  width: 350px;
+}
+
+.buscar:hover i {
+  transform: rotate(-360deg);
+}
+
+.btn:hover {
+  background: #000000;
+}
+
+/*----------CUERPO----------*/
+.especialidad h1 {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 50px;
+}
+
+.content {
+  grid-area: content;
+}
+.sidebar {
+  grid-area: sidebar;
+  height: 200px;
+}
+.footer {
+  grid-area: footer;
+  height: 200px;
+  margin-bottom: 80px;
+}
+.adversiting {
+  grid-area: adversiting;
+  margin-bottom: 80px;
+}
+.cell {
+  background-color: #c3c3c3;
+  color: #333;
+  border-radius: 20px;
+  border: 3px solid rgb(71, 224, 255);
+  padding: 20px;
+  font-size: 20px;
+}
+.layout {
+  display: grid;
+  grid-gap: 100px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+    " ... sidebar content ..."
+    " ... adversiting footer ... ";
+}
