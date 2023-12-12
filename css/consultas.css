@@ -202,7 +202,15 @@ input {
   grid-area: sidebar;
   height: 200px;
   width: 500px;
+  display: flex;
+  justify-content: space-between;
 }
+
+.text {
+  font-size: 25px;
+  font-family: Inknut Antiqua;
+}
+
 .footer {
   grid-area: footer;
   height: 200px;
