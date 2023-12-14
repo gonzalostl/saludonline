@@ -72,12 +72,12 @@ body {
 
   padding: 0px;
   font-size: 20px;
-  margin-top: 0px;
+
   margin-bottom: 100px;
 }
 .layout {
   display: grid;
-
+  margin-top: 200px;
   grid-template-columns: repeat(5, 1fr);
   grid-template-areas: "... ... content ... ...";
 }
