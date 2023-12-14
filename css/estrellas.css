@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-repeat: no-repeat;
+  background: linear-gradient(to right, #edefef7d, #38d7f388), url("/img/moimedico.jpg");
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.rating {
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 30px 40px;
+  border: 3px solid #111;
+  gap: 4px;
+  border-radius: 30px;
+  background: #353535;
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.5), inset 10px 10px 3px rgba(255, 255, 255, 0.1),
+    -4px -4px 15px rgba(255, 255, 255, 0.1), inset -2px -2px 12px rgba(0, 0, 0, 0.75);
+}
+
+.rating input {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.rating input::before {
+  content: "\f005";
+  position: absolute;
+  font-family: fontAwesome;
+  font-size: 34px;
+  color: #111;
+  transition: 0.5s;
+}
+
+.rating input:hover ~ input::before,
+.rating input:hover::before,
+.rating input:checked ~ input::before,
+.rating input:checked:before {
+  color: var(--c);
+}
+
+/*----------GRID-----------*/
+
+.content {
+  grid-area: content;
+  text-align: center;
+}
+
+.cell {
+  background-color: #f4eeee;
+  color: #333;
+  border-radius: 20px;
+
+  padding: 0px;
+  font-size: 20px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.layout {
+  display: grid;
+  margin-top: 100px;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-areas: "... ... content ... ...";
+}
+
+/*--------------FORM---------------*/
+
+.form-register {
+  width: 400px;
+  background: #24303c;
+  padding: 30px;
+  border-radius: 4px;
+  font-family: "calibri";
+  color: white;
+  box-shadow: 7px 13px 37px #000;
+}
+
+.form-register h1 {
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+.controls {
+  width: 100%;
+  background: #24303c;
+  padding: 10px;
+  border-radius: 4px;
+  margin-top: 30px;
+  margin-bottom: 16px;
+  border: 1px solid #1f53c5;
+  font-family: "calibri";
+  font-size: 18px;
+  color: white;
+}
+
+.form-register p {
+  height: 40px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 40px;
+}
+
+.form-register a {
+  color: white;
+  text-decoration: none;
+}
+
+.form-register a:hover {
+  color: white;
+  text-decoration: underline;
+}
+.form-register .botons {
+  width: 100%;
+  background: #1f53c5;
+  border: none;
+  padding: 12px;
+  color: white;
+  margin: 16px 0;
+  font-size: 16px;
+  border-radius: 15px;
+}
