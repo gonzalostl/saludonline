@@ -197,18 +197,32 @@ input {
 
 .content {
   grid-area: content;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
 }
 .sidebar {
   grid-area: sidebar;
   height: 200px;
   width: 500px;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
 }
 
 .text {
   font-size: 25px;
   font-family: Inknut Antiqua;
+  grid-column-start: 3;
+  grid-column-end: 6;
+  text-align: center;
+}
+
+.text2 {
+  font-size: 15px;
+  font-family: Inknut Antiqua;
+  grid-column-start: 3;
+  grid-column-end: 6;
+  text-align: left;
+  margin-left: 37px;
 }
 
 .footer {
@@ -216,10 +230,14 @@ input {
   height: 200px;
   width: 500px;
   margin-bottom: 80px;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
 }
 .adversiting {
   grid-area: adversiting;
   margin-bottom: 80px;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
 }
 .cell {
   background-color: #c9c4c4;
