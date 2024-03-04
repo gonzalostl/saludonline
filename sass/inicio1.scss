@@ -1,0 +1,10 @@
+@import "header";
+@import "footer";
+body {
+  width: 100%;
+}
+
+.container1 {
+  display: flex;
+  justify-content: space-between;
+}
