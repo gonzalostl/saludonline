@@ -319,7 +319,7 @@ body {
 /*------Preguntas-------*/
 .pyr {
   width: 90%;
-  margin: 100px auto;
+  margin: 150px auto;
 }
 
 .container-faq {
@@ -391,4 +391,28 @@ body {
   font-size: 3rem;
   top: -10px;
   opacity: 0.2;
+}
+
+.container2 h1 {
+  margin-top: 120px;
+  display: flex;
+  justify-content: center;
+}
+.container2 .blurry-bar {
+  display: flex;
+  justify-content: center;
+}
+.blurry-bar img {
+  margin-top: 40px;
+  width: 700px;
+}
+.content {
+  padding: 20px;
+  text-align: center;
+  color: #ffffff; /* Color del texto */
+}
+
+input[type="range"] {
+  width: 80%;
+  margin-top: 10px;
 }
