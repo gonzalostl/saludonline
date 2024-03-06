@@ -1,0 +1,20 @@
+@import "header";
+@import "footer";
+.container4 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  margin-top: 100px;
+} /*# sourceMappingURL=inicio1.css.map */
+
+.container4 .qo {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.container4 .qo h2 {
+  font-size: xx-large;
+}
