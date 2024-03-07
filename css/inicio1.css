@@ -318,8 +318,13 @@ body {
   margin-bottom: 20px;
   clear: left;
   position: realtive;
+  padding: 15px;
 }
 
+.reproductor img {
+  margin-left: 10px;
+  margin-right: 10px;
+}
 .container4 {
   display: flex;
   justify-content: space-around;
@@ -443,7 +448,7 @@ body {
 .content {
   padding: 20px;
   text-align: center;
-  color: #ffffff; /* Color del texto */
+  color: #ffffff;
 }
 
 input[type="range"] {
