@@ -321,7 +321,13 @@ footer .container {
   bottom: 0;
   width: 100%;
 }
-
+.container1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 20px auto;
+}
 .container1 section {
   max-width: 600px;
   margin: 20px auto;
@@ -369,4 +375,34 @@ footer .container {
 
 .unirse-btn:hover {
   background-color: #45a049;
+}
+
+.rating-section {
+  text-align: center;
+  padding: 20px;
+}
+
+.rating-section form {
+  padding: 40px 0px 40px 0px;
+}
+.star-rating input {
+  display: none;
+}
+
+.star-rating label {
+  font-size: 30px;
+  color: #ccc;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+.star-rating label:hover,
+.star-rating input:checked ~ label {
+  color: #ffcc00;
+}
+
+.comment-input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
 }

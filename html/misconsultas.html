@@ -97,7 +97,7 @@
     </div>
     <div class="container1">
       <section>
-        <h2>Consultas Programadas</h2>
+        <h2>Proximas Consultas</h2>
         <ul>
           <li>
             <div class="consulta">
@@ -117,10 +117,54 @@
             </div>
             <img class="doctor-img" src="/img/whitemedico.jpg" alt="" />
           </li>
-          <!-- Puedes agregar más consultas según sea necesario -->
         </ul>
       </section>
+      <section class="rating-section">
+        <h2>Valorar Doctores</h2>
+        <form action="#" method="post">
+          <label for="motivo">Especialista:</label>
+          <select id="motivo" name="motivo" required>
+            <option value="">Daniel Blancas Jiménez(Odontología)</option>
+            <option value="">Moises Moreno Exojo(Odontología)</option>
+            <option value="">Natan Cejas García(Dermatología)</option>
+            <option value="">Miguel Crespo Moreno(Dermatología)</option>
+            <option value="">Carmen García López(Neurología)</option>
+            <option value="">Javier Rodríguez Martínez(Neurología)</option>
+            <option value="">Marta Pérez Sánchez(Nutriología)</option>
+            <option value="">Alberto Fernández González(Nutriología)</option>
+            <option value="">Rosa López Ruiz(Cardiología)</option>
+            <option value="">David Martínez García(Cardiología)</option>
+            <option value="">María Sánchez Hernández(Oftalmología)</option>
+            <option value="">Juan Torres Rodríguez(Oftalmología)</option>
+            <option value="">Laura González Fernández(Psicología)</option>
+            <option value="">José Pérez Martínez(Psicología)</option>
+            <option value="">Ana Ruiz Sánchez(Pediatria)</option>
+            <option value="">Francisco García Martínez(Pediatria)</option>
+            <option value="">Elena Hernández López(Toxicología)</option>
+            <option value="">Manuel Rodríguez Pérez(Toxicología)</option>
+          </select>
+          <div class="star-rating">
+            <input type="radio" id="star5" name="rating" value="5" />
+            <label for="star5">&#9733;</label>
+            <input type="radio" id="star4" name="rating" value="4" />
+            <label for="star4">&#9733;</label>
+            <input type="radio" id="star3" name="rating" value="3" />
+            <label for="star3">&#9733;</label>
+            <input type="radio" id="star2" name="rating" value="2" />
+            <label for="star2">&#9733;</label>
+            <input type="radio" id="star1" name="rating" value="1" />
+            <label for="star1">&#9733;</label>
+          </div>
+          <textarea
+            class="comment-input"
+            placeholder="Comentario"
+            rows="3"
+          ></textarea>
+          <button type="submit" class="unirse-btn">Enviar Valoración</button>
+        </form>
+      </section>
     </div>
+
     <footer class="footer">
       <div class="container">
         <div class="col1">
