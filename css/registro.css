@@ -9,7 +9,7 @@
 
 body {
   background-color: #c9d6ff;
-  background: url(/img/moimedico.jpg);
+  background: url(../img/moimedico.jpg);
   background-size: cover;
   display: flex;
   align-items: center;

@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background-image: url(/img/moimedico.jpg);
+  background-image: url(../img/moimedico.jpg);
   background-size: cover;
   margin: 0;
   padding: 0;
@@ -43,4 +43,4 @@ body form button a {
 }
 body form button:hover {
   background-color: #000000;
-}/*# sourceMappingURL=pedircita.css.map */
+} /*# sourceMappingURL=pedircita.css.map */
